@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style/pico.grey.css">
+    <style>
+        form {
+            margin-top: 3rem;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        input,
+        select {
+            max-width: 70vw;
+        }
+
+        img {
+            max-width: 4rem;
+            max-height: 3rem;
+
+        }
+
+        a {
+            color: black;
+        }
+
+        button {
+            max-width: 40vw;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <img src="/img/imgem.jpeg" alt="avatar">
+        <label for="text">Seu nome</label>
+        <input type="text" required>
+        <label for="email">Seu Gmail</label>
+        <input type="email" required>
+        <label for="text">Seu usuario?</label>
+        <input type="text" required>
+        <label for="password">Sua senha</label>
+        <input type="password" required>
+        <label for="password">Confirme sua senha</label>
+        <input type="password" required>
+        <label for="text">Seu Genero?</label>
+        <select name="genero" required>
+            <option selected disabled value="">
+            <option>Heterosexual</option>
+            <option>Homosexual</option>
+            <option>Prefiro não informar</option>
+        </select>
+        <label for="date">Seu nascimento</label>
+        <input type="date">
+        <div>
+            <a href="feed.html" role="button" type="submit">cadastrar</a>
+            <p><button type="button"><a href="">já tenho conta</a></button></p>
+        </div>
+    </form>
+</body>
+
+</html>
